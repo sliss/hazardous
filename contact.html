@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - OpenHazards Group</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation (same as index) -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="placeholder-logo.svg" alt="OpenHazards Logo" class="logo">
+        <span class="brand-text">OpenHazards</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="products.html">Products</a>
+          <div class="dropdown-content">
+            <a href="products.html#hazard-viewer">Hazard Viewer</a>
+            <a href="products.html#home-response">Home Response</a>
+            <a href="products.html#quakeworks">QuakeWorks App</a>
+            <a href="products.html#nhd-reports">NHD Reports</a>
+            <a href="products.html#enterprise">Enterprise Solutions</a>
+          </div>
+        </li>
+        <li><a href="science.html">Science</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Get in touch with our team for sales, support, or partnership inquiries</p>
+    </div>
+  </section>
+
+  <!-- Contact Options -->
+  <section class="contact-options">
+    <div class="container">
+      <div class="options-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <img src="placeholder-icon-sales.svg" alt="Sales icon">
+          </div>
+          <h3>Sales Inquiries</h3>
+          <p>Interested in enterprise solutions or API access? Our sales team is ready to help.</p>
+          <a href="mailto:sales@openhazards.com" class="contact-link">sales@openhazards.com</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <img src="placeholder-icon-support.svg" alt="Support icon">
+          </div>
+          <h3>Technical Support</h3>
+          <p>Need help with our tools or have technical questions? Contact our support team.</p>
+          <a href="mailto:support@openhazards.com" class="contact-link">support@openhazards.com</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <img src="placeholder-icon-media.svg" alt="Media icon">
+          </div>
+          <h3>Media & Press</h3>
+          <p>Media inquiries, interview requests, or press kit downloads.</p>
+          <a href="mailto:media@openhazards.com" class="contact-link">media@openhazards.com</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <img src="placeholder-icon-research.svg" alt="Research icon">
+          </div>
+          <h3>Research Collaboration</h3>
+          <p>Academic partnerships and research collaboration opportunities.</p>
+          <a href="mailto:research@openhazards.com" class="contact-link">research@openhazards.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="form-grid">
+        <div class="form-content">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form and our team will get back to you within 24 hours.</p>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company/Organization</label>
+              <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+              <label for="inquiry-type">Inquiry Type *</label>
+              <select id="inquiry-type" name="inquiry-type" required>
+                <option value="">Select an option</option>
+                <option value="sales">Sales Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="media">Media/Press</option>
+                <option value="research">Research Collaboration</option>
+                <option value="general">General Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label>
+                <input type="checkbox" name="newsletter" value="yes">
+                I'd like to receive updates about OpenHazards products and services
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Office Location</h3>
+            <address>
+              OpenHazards Group<br>
+              2827 Spafford St.<br>
+              Davis, CA 95618<br>
+              United States
+            </address>
+            <div class="map-placeholder">
+              <img src="placeholder-map.jpg" alt="Map showing OpenHazards office location in Davis, California">
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM PT<br>
+              Saturday - Sunday: Closed</p>
+            <p class="note">Support tickets are monitored 24/7 for critical issues</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn">
+                <img src="placeholder-icon-linkedin.svg" alt="LinkedIn">
+              </a>
+              <a href="#" aria-label="Twitter">
+                <img src="placeholder-icon-twitter.svg" alt="Twitter">
+              </a>
+              <a href="#" aria-label="GitHub">
+                <img src="placeholder-icon-github.svg" alt="GitHub">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ CTA -->
+  <section class="faq-cta-section">
+    <div class="container">
+      <div class="faq-cta-content">
+        <h2>Have a Quick Question?</h2>
+        <p>Check our FAQ section for answers to common questions about our products and services.</p>
+        <a href="resources.html#faq" class="btn btn-outline">View FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as index) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="placeholder-logo-white.svg" alt="OpenHazards Logo" class="footer-logo">
+          <p>Pioneering earthquake forecasting since 2009</p>
+          <p class="footer-address">2827 Spafford St.<br>Davis, CA 95618</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html#hazard-viewer">Hazard Viewer</a></li>
+            <li><a href="products.html#home-response">Home Response</a></li>
+            <li><a href="products.html#quakeworks">QuakeWorks App</a></li>
+            <li><a href="products.html#nhd-reports">NHD Reports</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="science.html">Our Science</a></li>
+            <li><a href="about.html#team">Leadership</a></li>
+            <li><a href="about.html#news">News</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="resources.html#safety">Safety Guide</a></li>
+            <li><a href="resources.html#faq">FAQ</a></li>
+            <li><a href="resources.html#api">API Docs</a></li>
+            <li><a href="resources.html#publications">Publications</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 OpenHazards Group. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+
+</html>

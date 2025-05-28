@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - OpenHazards Earthquake Forecasting Tools</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="products.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation (same as index) -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="placeholder-logo.svg" alt="OpenHazards Logo" class="logo">
+        <span class="brand-text">OpenHazards</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="products.html" class="active">Products</a>
+          <div class="dropdown-content">
+            <a href="#hazard-viewer">Hazard Viewer</a>
+            <a href="#home-response">Home Response</a>
+            <a href="#quakeworks">QuakeWorks App</a>
+            <a href="#nhd-reports">NHD Reports</a>
+            <a href="#enterprise">Enterprise Solutions</a>
+          </div>
+        </li>
+        <li><a href="science.html">Science</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Products</h1>
+      <p>Science-based tools for earthquake risk assessment and property protection</p>
+    </div>
+  </section>
+
+  <!-- Product Navigation -->
+  <section class="product-nav">
+    <div class="container">
+      <div class="product-nav-grid">
+        <a href="#hazard-viewer" class="product-nav-item">
+          <img src="placeholder-icon-map.svg" alt="Map icon">
+          <span>Hazard Viewer</span>
+        </a>
+        <a href="#home-response" class="product-nav-item">
+          <img src="placeholder-icon-home.svg" alt="Home icon">
+          <span>Home Response</span>
+        </a>
+        <a href="#quakeworks" class="product-nav-item">
+          <img src="placeholder-icon-mobile.svg" alt="Mobile icon">
+          <span>QuakeWorks</span>
+        </a>
+        <a href="#nhd-reports" class="product-nav-item">
+          <img src="placeholder-icon-document.svg" alt="Document icon">
+          <span>NHD Reports</span>
+        </a>
+        <a href="#enterprise" class="product-nav-item">
+          <img src="placeholder-icon-building.svg" alt="Building icon">
+          <span>Enterprise</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hazard Viewer -->
+  <section id="hazard-viewer" class="product-detail">
+    <div class="container">
+      <div class="product-header">
+        <div class="product-info">
+          <h2>Hazard Viewer</h2>
+          <p class="product-tagline">Interactive global earthquake probability maps</p>
+          <p>Access real-time earthquake forecasts for any location worldwide. Our proprietary Pattern Informatics
+            algorithm provides probability assessments for earthquakes of magnitude 5 and above, updated daily with the
+            latest seismic data.</p>
+          <div class="product-features">
+            <h3>Key Features</h3>
+            <ul>
+              <li>Global coverage with 0.1° grid resolution</li>
+              <li>Customizable time periods (3 months to 3 years)</li>
+              <li>Magnitude threshold selection (M5 to M8+)</li>
+              <li>Daily updates at 21:30 PT</li>
+              <li>Ground shaking intensity overlays</li>
+              <li>Historical earthquake data visualization</li>
+            </ul>
+          </div>
+          <div class="product-cta">
+            <a href="#" class="btn btn-primary">Launch Hazard Viewer</a>
+            <a href="#" class="btn btn-outline">View Tutorial</a>
+          </div>
+        </div>
+        <div class="product-visual">
+          <img src="placeholder-hazard-viewer-screenshot.jpg"
+            alt="Screenshot of Hazard Viewer showing earthquake probability map with color-coded risk zones">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home Response -->
+  <section id="home-response" class="product-detail alt-bg">
+    <div class="container">
+      <div class="product-header reverse">
+        <div class="product-info">
+          <h2>Home Response Tool</h2>
+          <p class="product-tagline">Estimate earthquake damage to your property</p>
+          <p>Understand your home's vulnerability to earthquake damage based on construction type, building age, and
+            location. Get personalized damage estimates and mitigation recommendations.</p>
+          <div class="product-features">
+            <h3>What You'll Learn</h3>
+            <ul>
+              <li>Expected damage levels for different earthquake scenarios</li>
+              <li>Structural vulnerability assessment</li>
+              <li>Estimated repair costs</li>
+              <li>Retrofit recommendations</li>
+              <li>Insurance coverage guidance</li>
+              <li>Emergency preparedness tips</li>
+            </ul>
+          </div>
+          <div class="product-cta">
+            <a href="#" class="btn btn-primary">Assess Your Home</a>
+            <a href="#" class="btn btn-outline">Sample Report</a>
+          </div>
+        </div>
+        <div class="product-visual">
+          <img src="placeholder-home-response-screenshot.jpg"
+            alt="Home Response tool interface showing damage assessment for a residential property">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QuakeWorks App -->
+  <section id="quakeworks" class="product-detail">
+    <div class="container">
+      <div class="product-header">
+        <div class="product-info">
+          <h2>QuakeWorks Mobile App</h2>
+          <p class="product-tagline">Earthquake forecasts in your pocket</p>
+          <p>Stay informed about earthquake risks wherever you go. QuakeWorks brings our advanced forecasting technology
+            to iOS devices with location-based alerts and preparedness tools.</p>
+          <div class="product-features">
+            <h3>Mobile Features</h3>
+            <ul>
+              <li>Location-based earthquake probability</li>
+              <li>Push notifications for elevated risk</li>
+              <li>Earthquake insurance calculator</li>
+              <li>Emergency kit checklist</li>
+              <li>Family communication plan</li>
+              <li>Offline preparedness guides</li>
+            </ul>
+          </div>
+          <div class="product-cta">
+            <a href="#" class="btn btn-primary">
+              <img src="placeholder-app-store-badge.svg" alt="Download on the App Store">
+            </a>
+            <span class="version-info">Version 1.6.1 • Requires iOS 12.0+</span>
+          </div>
+        </div>
+        <div class="product-visual">
+          <img src="placeholder-quakeworks-mockup.png"
+            alt="QuakeWorks app on iPhone showing earthquake probability map and alert notifications">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NHD Reports -->
+  <section id="nhd-reports" class="product-detail alt-bg">
+    <div class="container">
+      <div class="product-header reverse">
+        <div class="product-info">
+          <h2>Natural Hazard Disclosure Reports</h2>
+          <p class="product-tagline">Fast, affordable reports for California real estate</p>
+          <p>Meet California's legal requirements for property transactions with our comprehensive Natural Hazard
+            Disclosure reports. Get professional reports in 15 minutes for just $50.</p>
+          <div class="product-features">
+            <h3>Report Includes</h3>
+            <ul>
+              <li>Earthquake fault zones</li>
+              <li>Seismic hazard zones</li>
+              <li>Flood zones</li>
+              <li>Fire hazard severity zones</li>
+              <li>Military ordnance locations</li>
+              <li>Commercial/industrial disclosure</li>
+            </ul>
+          </div>
+          <div class="pricing-box">
+            <h3>$50</h3>
+            <p>per report</p>
+            <ul>
+              <li>15-minute delivery</li>
+              <li>State-compliant format</li>
+              <li>Professional PDF report</li>
+            </ul>
+          </div>
+          <div class="product-cta">
+            <a href="#" class="btn btn-primary">Order Report</a>
+            <a href="#" class="btn btn-outline">View Sample</a>
+          </div>
+        </div>
+        <div class="product-visual">
+          <img src="placeholder-nhd-report-sample.jpg"
+            alt="Sample pages from Natural Hazard Disclosure report showing maps and hazard assessments">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise Solutions -->
+  <section id="enterprise" class="product-detail enterprise-section">
+    <div class="container">
+      <h2>Enterprise Solutions</h2>
+      <p class="section-subtitle">Custom analytics and API access for institutional clients</p>
+
+      <div class="enterprise-grid">
+        <div class="enterprise-card">
+          <img src="placeholder-icon-api.svg" alt="API icon" class="enterprise-icon">
+          <h3>API Access</h3>
+          <p>Integrate our earthquake forecasting engine directly into your systems with RESTful APIs</p>
+          <ul>
+            <li>Real-time probability queries</li>
+            <li>Bulk location processing</li>
+            <li>Custom data formats</li>
+            <li>SLA guarantees</li>
+          </ul>
+        </div>
+
+        <div class="enterprise-card">
+          <img src="placeholder-icon-analytics.svg" alt="Analytics icon" class="enterprise-icon">
+          <h3>Custom Analytics</h3>
+          <p>Tailored risk assessments for insurance, reinsurance, and catastrophe bond pricing</p>
+          <ul>
+            <li>Portfolio risk analysis</li>
+            <li>Scenario modeling</li>
+            <li>Loss estimation</li>
+            <li>Trigger event monitoring</li>
+          </ul>
+        </div>
+
+        <div class="enterprise-card">
+          <img src="placeholder-icon-government.svg" alt="Government icon" class="enterprise-icon">
+          <h3>Government Services</h3>
+          <p>Support civil defense and emergency management with advanced warning systems</p>
+          <ul>
+            <li>Regional monitoring dashboards</li>
+            <li>Alert system integration</li>
+            <li>Public communication tools</li>
+            <li>Training and support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="enterprise-cta">
+        <h3>Ready to discuss your needs?</h3>
+        <p>Our team will work with you to design a custom solution</p>
+        <a href="contact.html" class="btn btn-primary">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as index) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="placeholder-logo-white.svg" alt="OpenHazards Logo" class="footer-logo">
+          <p>Pioneering earthquake forecasting since 2009</p>
+          <p class="footer-address">2827 Spafford St.<br>Davis, CA 95618</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#hazard-viewer">Hazard Viewer</a></li>
+            <li><a href="#home-response">Home Response</a></li>
+            <li><a href="#quakeworks">QuakeWorks App</a></li>
+            <li><a href="#nhd-reports">NHD Reports</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="science.html">Our Science</a></li>
+            <li><a href="about.html#team">Leadership</a></li>
+            <li><a href="about.html#news">News</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="resources.html#safety">Safety Guide</a></li>
+            <li><a href="resources.html#faq">FAQ</a></li>
+            <li><a href="resources.html#api">API Docs</a></li>
+            <li><a href="resources.html#publications">Publications</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 OpenHazards Group. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
