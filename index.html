@@ -4,43 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpenHazards - AI-Powered Earthquake Intelligence</title>
+  <title>OpenHazards - Global Earthquake Forecasting & Risk Assessment</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Progress Indicator -->
-  <div class="progress-indicator"></div>
-
-  <!-- Particles Background -->
-  <div class="particles-container" id="particles"></div>
-
   <!-- Navigation -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar">
     <div class="container">
       <div class="nav-brand">
-        <div class="logo-container">
-          <div class="logo-icon">
-            <i class="fas fa-wave-square"></i>
-          </div>
-          <span class="brand-text">OpenHazards</span>
-        </div>
+        <img src="placeholder-logo.svg" alt="OpenHazards Logo - Earthquake forecasting company" class="logo">
+        <span class="brand-text">OpenHazards</span>
       </div>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#features" class="nav-link">Features</a></li>
-        <li><a href="#technology" class="nav-link">Technology</a></li>
-        <li><a href="#stats" class="nav-link">Impact</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-        <li><a href="#cta" class="btn btn-primary">Get Started</a></li>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="products.html">Products</a>
+          <div class="dropdown-content">
+            <a href="products.html#hazard-viewer">Hazard Viewer</a>
+            <a href="products.html#home-response">Home Response</a>
+            <a href="products.html#quakeworks">QuakeWorks App</a>
+            <a href="products.html#nhd-reports">NHD Reports</a>
+            <a href="products.html#enterprise">Enterprise Solutions</a>
+          </div>
+        </li>
+        <li><a href="science.html">Science</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
@@ -49,79 +47,34 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="seismic-waves"></div>
-      <div class="gradient-overlay"></div>
-    </div>
+  <section class="hero">
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge animate-fade-up">
-          <i class="fas fa-shield-alt"></i>
-          <span>Trusted by 500+ Organizations</span>
+        <h1 class="hero-title">Protecting Lives Through Advanced Earthquake Forecasting</h1>
+        <p class="hero-subtitle">Science-based earthquake probability assessments and damage predictions for any
+          location worldwide</p>
+        <div class="hero-cta">
+          <a href="products.html#hazard-viewer" class="btn btn-primary">Try Hazard Viewer</a>
+          <a href="science.html" class="btn btn-secondary">Learn Our Science</a>
         </div>
-        <h1 class="hero-title animate-fade-up">
-          <span class="title-line">Predict.</span>
-          <span class="title-line">Prepare.</span>
-          <span class="title-line highlight">Protect.</span>
-        </h1>
-        <p class="hero-subtitle animate-fade-up">
-          AI-Powered Earthquake Intelligence that saves lives through advanced forecasting, real-time monitoring, and
-          precise risk assessment for any location worldwide.
-        </p>
-        <div class="hero-cta animate-fade-up">
-          <a href="#features" class="btn btn-primary btn-large">
-            <span>Explore Platform</span>
-            <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="#technology" class="btn btn-secondary btn-large">
-            <i class="fas fa-play"></i>
-            <span>Watch Demo</span>
-          </a>
-        </div>
-        <div class="hero-stats animate-fade-up">
-          <div class="stat-item">
-            <div class="stat-number" data-target="85">0</div>
-            <div class="stat-label">% Accuracy</div>
+        <div class="credibility-badges">
+          <div class="badge">
+            <img src="placeholder-icon-peer-reviewed.svg" alt="Peer reviewed research icon">
+            <span>Peer-Reviewed Methods</span>
           </div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="16">0</div>
-            <div class="stat-label">Years Experience</div>
+          <div class="badge">
+            <img src="placeholder-icon-global.svg" alt="Global coverage icon">
+            <span>Global Coverage</span>
           </div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="247">0</div>
-            <div class="stat-label">24/7 Monitoring</div>
+          <div class="badge">
+            <img src="placeholder-icon-realtime.svg" alt="Real-time updates icon">
+            <span>Daily Updates</span>
           </div>
         </div>
       </div>
-      <div class="hero-visual animate-fade-up">
-        <div class="dashboard-preview">
-          <div class="dashboard-header">
-            <div class="dashboard-dots">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="dashboard-title">OpenHazards Intelligence</div>
-          </div>
-          <div class="dashboard-content">
-            <div class="earthquake-globe" id="earthquakeGlobe">
-              <div class="globe-rings"></div>
-              <div class="earthquake-points">
-                <div class="eq-point" style="top: 30%; left: 20%;"></div>
-                <div class="eq-point" style="top: 60%; left: 70%;"></div>
-                <div class="eq-point" style="top: 45%; left: 85%;"></div>
-                <div class="eq-point major" style="top: 35%; left: 15%;"></div>
-              </div>
-            </div>
-            <div class="live-data">
-              <div class="data-stream">
-                <div class="data-line active"></div>
-                <div class="data-line"></div>
-                <div class="data-line active"></div>
-                <div class="data-line"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="hero-visual">
+        <img src="images/placeholder-earthquake-map.png"
+          alt="Global earthquake probability map showing hotspots in red and orange colors" class="hero-image">
       </div>
     </div>
   </section>
@@ -129,321 +82,98 @@
   <!-- Trust Indicators -->
   <section class="trust-section">
     <div class="container">
-      <div class="trust-content">
-        <div class="trust-label">Trusted by leading organizations</div>
-        <div class="trust-logos">
-          <div class="trust-logo">UC Davis</div>
-          <div class="trust-logo">USGS</div>
-          <div class="trust-logo">CalOES</div>
-          <div class="trust-logo">FEMA</div>
-          <div class="trust-logo">Stanford</div>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <h3>85%</h3>
+          <p>Forecast Accuracy Rate</p>
+        </div>
+        <div class="trust-item">
+          <h3>Since 2009</h3>
+          <p>Pioneering Earthquake Forecasting</p>
+        </div>
+        <div class="trust-item">
+          <h3>UC Davis</h3>
+          <p>Scientific Partnership</p>
+        </div>
+        <div class="trust-item">
+          <h3>24/7</h3>
+          <p>Automated Monitoring</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="features-section" id="features">
+  <!-- Products Showcase -->
+  <section class="products-showcase">
     <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Core Capabilities</div>
-        <h2 class="section-title">Advanced Earthquake Intelligence</h2>
-        <p class="section-subtitle">Powered by AI and validated by 16+ years of scientific research</p>
-      </div>
+      <h2 class="section-title">Our Solutions</h2>
+      <p class="section-subtitle">From homeowners to insurance companies, we provide the tools you need</p>
 
-      <div class="features-grid">
-        <div class="feature-card glass-effect" data-tilt>
-          <div class="feature-icon">
-            <i class="fas fa-brain"></i>
-          </div>
-          <h3>AI Forecasting</h3>
-          <p>Machine learning algorithms analyze seismic patterns to predict earthquake probabilities with 85% accuracy
-          </p>
-          <div class="feature-tech">
-            <span class="tech-tag">Neural Networks</span>
-            <span class="tech-tag">Pattern Recognition</span>
-          </div>
-        </div>
-
-        <div class="feature-card glass-effect" data-tilt>
-          <div class="feature-icon">
-            <i class="fas fa-globe-americas"></i>
-          </div>
-          <h3>Global Coverage</h3>
-          <p>Comprehensive monitoring and risk assessment for any location worldwide with real-time data integration</p>
-          <div class="feature-tech">
-            <span class="tech-tag">Real-time</span>
-            <span class="tech-tag">Worldwide</span>
-          </div>
-        </div>
-
-        <div class="feature-card glass-effect" data-tilt>
-          <div class="feature-icon">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <h3>Risk Analytics</h3>
-          <p>Detailed damage predictions and vulnerability assessments for infrastructure and property protection</p>
-          <div class="feature-tech">
-            <span class="tech-tag">Damage Models</span>
-            <span class="tech-tag">Risk Scoring</span>
-          </div>
-        </div>
-
-        <div class="feature-card glass-effect featured" data-tilt>
-          <div class="feature-badge">Most Popular</div>
-          <div class="feature-icon">
-            <i class="fas fa-eye"></i>
-          </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="placeholder-hazard-viewer-icon.svg" alt="Hazard Viewer tool icon" class="product-icon">
           <h3>Hazard Viewer</h3>
-          <p>Interactive visualization platform with customizable time periods and magnitude thresholds</p>
-          <div class="feature-tech">
-            <span class="tech-tag">Interactive</span>
-            <span class="tech-tag">Customizable</span>
-          </div>
+          <p>Interactive global earthquake probability maps with customizable time periods and magnitude thresholds</p>
+          <a href="products.html#hazard-viewer" class="link-arrow">Explore Tool →</a>
         </div>
 
-        <div class="feature-card glass-effect" data-tilt>
-          <div class="feature-icon">
-            <i class="fas fa-home"></i>
-          </div>
-          <h3>Property Assessment</h3>
-          <p>Personalized risk evaluation for homes and buildings based on location, construction, and geology</p>
-          <div class="feature-tech">
-            <span class="tech-tag">Personal</span>
-            <span class="tech-tag">Detailed</span>
-          </div>
+        <div class="product-card">
+          <img src="placeholder-home-response-icon.svg" alt="Home Response tool icon" class="product-icon">
+          <h3>Home Response</h3>
+          <p>Estimate potential damage to your property based on building type, age, and location</p>
+          <a href="products.html#home-response" class="link-arrow">Assess Your Risk →</a>
         </div>
 
-        <div class="feature-card glass-effect" data-tilt>
-          <div class="feature-icon">
-            <i class="fas fa-cogs"></i>
-          </div>
-          <h3>Enterprise API</h3>
-          <p>Scalable integration for insurance companies, government agencies, and enterprise applications</p>
-          <div class="feature-tech">
-            <span class="tech-tag">Scalable</span>
-            <span class="tech-tag">Integration</span>
-          </div>
+        <div class="product-card">
+          <img src="placeholder-nhd-icon.svg" alt="Natural Hazard Disclosure icon" class="product-icon">
+          <h3>NHD Reports</h3>
+          <p>Fast, affordable natural hazard disclosure reports for California real estate transactions</p>
+          <a href="products.html#nhd-reports" class="link-arrow">Order Report →</a>
+        </div>
+
+        <div class="product-card enterprise">
+          <img src="placeholder-enterprise-icon.svg" alt="Enterprise solutions icon" class="product-icon">
+          <h3>Enterprise Solutions</h3>
+          <p>Custom analytics and API access for insurers, reinsurers, and government agencies</p>
+          <a href="products.html#enterprise" class="link-arrow">Contact Sales →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats Section -->
-  <section class="stats-section" id="stats">
+  <!-- Scientific Validation -->
+  <section class="validation-section">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-bullseye"></i>
-          </div>
-          <div class="stat-number counter" data-target="85">0</div>
-          <div class="stat-unit">%</div>
-          <div class="stat-label">Forecast Accuracy</div>
-          <div class="stat-description">Validated through rigorous testing</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-          <div class="stat-number counter" data-target="2009">0</div>
-          <div class="stat-unit"></div>
-          <div class="stat-label">Since</div>
-          <div class="stat-description">Pioneering earthquake forecasting</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-university"></i>
-          </div>
-          <div class="stat-number counter" data-target="500">0</div>
-          <div class="stat-unit">+</div>
-          <div class="stat-label">Organizations</div>
-          <div class="stat-description">Trust our technology</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-clock"></i>
-          </div>
-          <div class="stat-number">24</div>
-          <div class="stat-unit">/7</div>
-          <div class="stat-label">Monitoring</div>
-          <div class="stat-description">Continuous global surveillance</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technology Section -->
-  <section class="technology-section" id="technology">
-    <div class="container">
-      <div class="tech-content">
-        <div class="tech-visual">
-          <div class="tech-demo">
-            <div class="demo-screen">
-              <div class="demo-header">
-                <div class="demo-title">Live Earthquake Data</div>
-                <div class="demo-status">
-                  <div class="status-dot active"></div>
-                  <span>Real-time</span>
-                </div>
-              </div>
-              <div class="demo-map">
-                <div class="map-overlay">
-                  <div class="seismic-reading">
-                    <div class="reading-line"></div>
-                    <div class="reading-line"></div>
-                    <div class="reading-line"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="demo-data">
-                <div class="data-item">
-                  <span class="data-label">Magnitude</span>
-                  <span class="data-value">4.2</span>
-                </div>
-                <div class="data-item">
-                  <span class="data-label">Probability</span>
-                  <span class="data-value">23%</span>
-                </div>
-                <div class="data-item">
-                  <span class="data-label">Risk Level</span>
-                  <span class="data-value warning">Medium</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tech-info">
-          <div class="section-badge">Our Technology</div>
-          <h2>Science-Backed Prediction Models</h2>
+      <div class="validation-content">
+        <div class="validation-text">
+          <h2>Validated Science You Can Trust</h2>
           <p>Our Pattern Informatics and Natural Time Weibull methods are based on peer-reviewed research published in
             leading scientific journals.</p>
-
-          <div class="tech-achievements">
-            <div class="achievement">
-              <i class="fas fa-check-circle"></i>
-              <span>Successfully forecasted 16 of 18 major California earthquakes (2002-2005)</span>
-            </div>
-            <div class="achievement">
-              <i class="fas fa-check-circle"></i>
-              <span>Published in Geophysical Research Letters and Reports on Progress in Physics</span>
-            </div>
-            <div class="achievement">
-              <i class="fas fa-check-circle"></i>
-              <span>Tested through RELM and CSEP frameworks</span>
-            </div>
-            <div class="achievement">
-              <i class="fas fa-check-circle"></i>
-              <span>Daily updates incorporating latest seismic data from USGS</span>
-            </div>
-          </div>
-
-          <div class="tech-cta">
-            <a href="science.html" class="btn btn-outline">
-              <span>Read the Research</span>
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
+          <ul class="validation-list">
+            <li>Successfully forecasted 16 of 18 major California earthquakes (2002-2005)</li>
+            <li>Published in Geophysical Research Letters and Reports on Progress in Physics</li>
+            <li>Tested through RELM and CSEP frameworks</li>
+            <li>Daily updates incorporating latest seismic data from USGS</li>
+          </ul>
+          <a href="science.html" class="btn btn-outline">Read the Research</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="testimonials-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">What Experts Say</div>
-        <h2 class="section-title">Trusted by Emergency Services & Researchers</h2>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card glass-effect">
-          <div class="testimonial-content">
-            "OpenHazards has revolutionized how we approach earthquake preparedness. Their forecasting accuracy is
-            unmatched."
-          </div>
-          <div class="testimonial-author">
-            <div class="author-avatar">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="author-info">
-              <div class="author-name">Dr. Sarah Chen</div>
-              <div class="author-title">Emergency Management Director, CalOES</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card glass-effect">
-          <div class="testimonial-content">
-            "The scientific rigor behind their models gives us confidence in making critical infrastructure decisions."
-          </div>
-          <div class="testimonial-author">
-            <div class="author-avatar">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="author-info">
-              <div class="author-name">Prof. Michael Rodriguez</div>
-              <div class="author-title">Seismologist, UC Davis</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card glass-effect">
-          <div class="testimonial-content">
-            "Essential tool for risk assessment. The real-time data integration saves us countless hours of analysis."
-          </div>
-          <div class="testimonial-author">
-            <div class="author-avatar">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="author-info">
-              <div class="author-name">Jennifer Park</div>
-              <div class="author-title">Risk Analyst, State Farm Insurance</div>
-            </div>
-          </div>
+        <div class="validation-visual">
+          <img src="placeholder-validation-chart.png"
+            alt="Chart showing 85% forecast accuracy over time with successful predictions highlighted"
+            class="validation-image">
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="cta-section" id="cta">
-    <div class="cta-bg">
-      <div class="cta-particles"></div>
-    </div>
+  <section class="cta-section">
     <div class="container">
-      <div class="cta-content">
-        <h2>Ready to Transform Your Earthquake Risk Management?</h2>
-        <p>Join 500+ organizations using OpenHazards to protect lives and assets through intelligent earthquake
-          forecasting.</p>
-        <div class="cta-buttons">
-          <a href="products.html" class="btn btn-primary btn-large">
-            <span>Start Free Trial</span>
-            <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="contact.html" class="btn btn-outline-white btn-large">
-            <i class="fas fa-phone"></i>
-            <span>Schedule Demo</span>
-          </a>
-        </div>
-        <div class="cta-features">
-          <div class="cta-feature">
-            <i class="fas fa-check"></i>
-            <span>30-day free trial</span>
-          </div>
-          <div class="cta-feature">
-            <i class="fas fa-check"></i>
-            <span>No credit card required</span>
-          </div>
-          <div class="cta-feature">
-            <i class="fas fa-check"></i>
-            <span>Full API access</span>
-          </div>
-        </div>
+      <h2>Ready to Understand Your Earthquake Risk?</h2>
+      <p>Start with our free Hazard Viewer or contact us for enterprise solutions</p>
+      <div class="cta-buttons">
+        <a href="products.html#hazard-viewer" class="btn btn-primary">Get Started Free</a>
+        <a href="contact.html" class="btn btn-outline-white">Contact Sales</a>
       </div>
     </div>
   </section>
@@ -453,19 +183,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-logo">
-            <div class="logo-icon">
-              <i class="fas fa-wave-square"></i>
-            </div>
-            <span class="brand-text">OpenHazards</span>
-          </div>
+          <img src="placeholder-logo-white.svg" alt="OpenHazards Logo" class="footer-logo">
           <p>Pioneering earthquake forecasting since 2009</p>
           <p class="footer-address">2827 Spafford St.<br>Davis, CA 95618</p>
-          <div class="footer-social">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </div>
         </div>
 
         <div class="footer-links">
@@ -475,7 +195,6 @@
             <li><a href="products.html#home-response">Home Response</a></li>
             <li><a href="products.html#quakeworks">QuakeWorks App</a></li>
             <li><a href="products.html#nhd-reports">NHD Reports</a></li>
-            <li><a href="products.html#enterprise">Enterprise API</a></li>
           </ul>
         </div>
 
@@ -486,7 +205,6 @@
             <li><a href="science.html">Our Science</a></li>
             <li><a href="about.html#team">Leadership</a></li>
             <li><a href="about.html#news">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
@@ -497,7 +215,6 @@
             <li><a href="resources.html#faq">FAQ</a></li>
             <li><a href="resources.html#api">API Docs</a></li>
             <li><a href="resources.html#publications">Publications</a></li>
-            <li><a href="resources.html#support">Support</a></li>
           </ul>
         </div>
       </div>
@@ -507,7 +224,6 @@
         <div class="footer-legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
-          <a href="#">Security</a>
         </div>
       </div>
     </div>
